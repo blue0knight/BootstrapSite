@@ -16,38 +16,108 @@
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link htef="css/stle.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 
   </head>
   <body>
 
       <header>
-        <a href="#">Generic Name<span class="subhead"> ..something here</span></a>
-        <nav>
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#about">About Us</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#staff">Our Staff</a></li>
-            <li><a href="#testimonials">Testimonials</a></li>
-          </ul>
-        </nav>
 
+        <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+            data-target="#myNav" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Logo<span class="subhead"> Name Here</span></a>
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="myNav">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#staff">Staff</a></li>
+              <li><a href="#testimonials">Testimonials</a></li>
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+      </nav>
 
       </header>
 
       <div class="main">
 
-        <section class="section" id="about">
+        <section class="section" id="#about">
+          <div class="container content">
+            <h2>About Us</h2>
+            <p class="sectionHeader"><strong>
+              This is a generic webtemplate created using bootstrap 3. Background images
+              used were taken from <a href="http://boutik.pt/">Boutik</a>, Carousel
+              images were taken from <a href="http://shop.exsud.pl/en/">Exsud</a> .
+              You can check <a href="https://www.awwwards.com/websites/big-background-images/">
+              AWWWARDS</a> for great background images and for inspiration.
+            </strong></p>
+            <div class="row">
+              <div class="col-md-6" id="aboutImage">
+                <img src="http://placehold.it/250x250" alt="generic image">
+              </div>
+              <div class="col-md-6">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                  nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                  in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                  nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                  sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                  nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                  in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                  nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                  sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </p>
+              </div>
+            </div><!-- row -->
+
+          </div><!-- container content -->
         </section>
 
-        <section class="section" id="services">
+        <section class="section" id="#services">
+            <div class="container content">
+              <h2>Services</h2>
+              <p class="sectionHeader"><strong>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</strong>
+              </p>
         </section>
 
-        <section class="section" id="staff">
+        <section class="section" id="#staff">
+          <div class="container content">
+            <h2>Staff</h2>
+            <p class="sectionHeader"><strong>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</strong>
+            </p>
         </section>
 
-        <section class="section" id="testimonials">
+        <section class="section" id="#testimonials">
+          <div class="container content">
+            <h2>Testimonials</h2>
+            <p class="sectionHeader"><strong>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</strong>
+            </p>
         </section>
 
         <footer>
