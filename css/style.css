@@ -1,18 +1,129 @@
 body {
-  padding-top: 70px;
+  font-family: "Roboto Slab",sans-serif;
+  font-weight: 300;
+  font-size: 1.5em;
+  position: relative;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 100;
 }
 
 
 /**  Header Navigation **/
 
 header .navbar {
-  padding: 20px 0;
-  transition: all .5s ease-out;
+  padding: 20px 80px;
 }
 
 header .navbar-default {
-  /*background-color: transparent;*/
+  background-color: transparent;
   border: none;
+}
+
+header .navbar-default .navbar-nav a {
+  color: white;
+  padding: 5px 8px;
+}
+
+header .navbar-default .navbar-nav a:hover {
+  color: #1E90FF;
+  transition: all .5s ease-out;
+
+}
+
+header .navbar-default .navbar-nav .active a {
+  font-weight: 700;
+  color: #1E90FF;
+  background-color: transparent;
+  border-bottom: 4px solid #1E90FF;
+  text-shadow: none;
+}
+
+header .navbar-default .navbar-nav .active a:hover {
+  color: #c080e0;
+  background: transparent;
+  text-shadow: none;
+}
+
+/** navbar brand **/
+header .navbar-brand {
+  background: url(../images/logo.png);
+  background-repeat: no-repeat;
+  background-position: 10px 20px;
+  height: auto;
+}
+
+header .navbar-brand h1 {
+  color: white;
+  margin: 0;
+  font-size:1.8em;
+  font-weight: 400;
+  padding-left: 100px;
+}
+
+header .navbar-brand span.subhead {
+  font-family: "Roboto Slab", serif;
+  font-size: .6em;
+  font-weight: 100;
+  display: block;
+}
+
+/** navbar toggle **/
+header .navbar-toggle {
+  background-color: #1E90FF;
+}
+
+header .navbar-default .navbar-toggle .icon-bar {
+  background-color: white;
+}
+
+@media only screen
+  and (max-width: 765px)
+  { header .navbar-collapse.in {
+    background-color: rgba(0, 0, 0, .5);
+  }
+}
+
+/**  nav inbody **/
+
+header .inbody {
+  background: rgba(6, 29, 37, .9);
+}
+
+header .navbar.inbody {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+header .navbar.inbody .navbar-nav {
+  padding-top: 10px;
+}
+
+header .inbody .navbar-brand {
+  background-size: 43px;
+  background-position: top left;
+  margin-top: 5px;
+  padding-bottom: 0;
+  margin-left: 10px;
+}
+
+header .inbody .navbar-brand h1 {
+  font-size: 1.1em;
+  padding-left: 38px;
+}
+
+header .inbody .navbar-brand span.subhead {
+  display: none;
+}
+
+
+/** Carousel **/
+
+.carousel-inner > .item > img {
+  height: 100vh;
+  width: 100%;
 }
 
 /** sections **/
@@ -57,8 +168,16 @@ header .navbar-default {
 #aboutImage img {
   max-width: 250px;
   max-height: 250px;
+  margin-bottom: 30px;
 }
 
+@media only screen
+and (max-width: 768px)
+and (min-width: 450px){
+  #about p {
+    padding: 0 15%;
+  }
+}
 /** services section **/
 
 .servicesBg {
@@ -71,11 +190,179 @@ header .navbar-default {
   margin-bottom: 50px;
 }
 
-.service img.image {
+.service img.img-circle {
   display: block;
   width: 150px;
   height: 150px;
   margin: 0 auto;
   margin-bottom: 25px;
-  border-radius: 75px;
+}
+
+@media only screen
+and (max-width: 768px)
+and (min-width: 450px){
+  #services p {
+    padding: 0 15%;
+  }
+}
+
+/** staff section **/
+
+.staffBg {
+  background-image: linear-gradient(rgba(0,0,0, .5), rgba(0,0,0, .5)), url("../images/bg4.jpeg");
+  background-attachment: fixed;
+  color: white;
+}
+.staff img.img {
+  display: block;
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  margin-bottom: 25px;
+}
+
+.staff p {
+  margin-bottom: 25px;
+}
+
+
+@media only screen
+and (max-width: 768px)
+and (min-width: 450px){
+  #staff p {
+    padding: 0 15%;
+  }
+}
+/** testimonials section **/
+
+.testimonialsBg {
+  background-image: linear-gradient(rgba(0,0,0, .5), rgba(0,0,0, .5)), url("../images/bg5.jpeg");
+  background-attachment: fixed;
+  color: white;
+}
+
+#testimonials {
+  padding: 0;
+}
+
+#testimonials blockquote {
+  background-color: rgba(255, 255, 255, .6);
+  margin: 0;
+  pading: 0;
+  border-left: none;
+  min-height: 500px;
+  position: relative;
+}
+
+#testimonials blockquote .quote {
+  background-color: rgba(255, 255, 255, .6);
+  padding: 20px 5%;
+  position: absolute;
+  bottom: 0;
+  width: 75%;
+  font-weight: 400;
+  border-radius: 0 50px 0 0;
+}
+
+#testimonials blockquote .quote:hover {
+  background-color: rgba(192, 128, 224, .9);
+}
+
+#testimonials #client1 {
+  background: url(../images/client1.png) no-repeat center;
+  background-size: cover;
+}
+#testimonials #client2 {
+  background: url(../images/client2.png) no-repeat center;
+  background-size: cover;
+}
+#testimonials #client3 {
+  background: url(../images/client3.png) no-repeat center;
+  background-size: cover;
+}
+#testimonials #client4 {
+  background: url(../images/client4.png) no-repeat center;
+  background-size: cover;
+}
+
+#testimonials .quote {
+  font-size: 1.2em;
+  line-height: 110%;
+  font-weight: 400;
+}
+
+
+#testimonials .quote .more, #testimonials .customer {
+  opacity: 0;
+  font-size: 0;
+  line-height: 0;
+  padding-top: 10px;
+}
+
+
+#testimonials .quote:hover .more {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 100;
+  display: block;
+  opacity: 1;
+  font-size: .8em;
+  line-height: 120%;
+}
+
+#testimonials .quote:hover .customer {
+  display: block;
+  font-size: .7em;
+  text-align: right;
+}
+
+#testimonials .quote .intro::after {
+  content: '...';
+}
+
+#testimonials .quote:hover .intro::after {
+  content: '';
+}
+
+@media only screen
+and (max-width: 768px)
+and (min-width: 450px){
+  #testimonials p {
+    padding: 0 15%;
+  }
+}
+/** footer **/
+
+footer {
+    background: #061D25;
+    padding: 10px 0;
+}
+
+footer .footerSocial {
+  margin: 10px auto;
+  margin-bottom: 10px;
+  padding-left: 10px;
+}
+
+footer .copyright {
+  margin: 10px auto;
+
+}
+
+footer .footerSocial a {
+    color: #70726F;
+    font-size: 20px;
+    padding: 10px;
+    border-right: 1px solid #70726F;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+}
+
+footer .footerSocial a:first-child {
+    border-left: 1px solid #70726F;
+}
+
+footer .footerSocial a:hover {
+    color: white;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
 }
